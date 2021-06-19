@@ -1,3 +1,6 @@
-<h2>Detalhes de {{pessoa.nome | uppercase}}</h2>
-<div><span>id: </span>{{pessoa.id}} </div>
-<div><span>nome: </span>{{pessoa.nome}} </div>
+<h1>{{pessoa.nome | uppercase}}</h1>
+<div><span>Id: </span>{{pessoa.id}}</div>
+<div>
+    <label for="nome">Nome da pessoa: </label>
+    <input id="nome" [(ngModel)]="pessoa.nome" placeholder="Digite o nome">
+</div>

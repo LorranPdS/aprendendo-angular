@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,7 +13,8 @@ import { PessoasComponent } from './pessoas/pessoas.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, // Esse foi gerado no início mas no exerc não tem
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
