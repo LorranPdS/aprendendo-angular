@@ -10,10 +10,15 @@ import { Pessoa } from '../pessoa';
 export class PessoasComponent implements OnInit {
 
   pessoas = PESSOAS;
+  selectedPessoa?: Pessoa;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelect(pessoa: Pessoa): void {
+    this.selectedPessoa = pessoa
   }
 
 }
