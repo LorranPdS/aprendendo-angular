@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PESSOAS } from '../mock-pessoas';
 import { Pessoa } from '../pessoa';
 
 @Component({
@@ -8,10 +9,7 @@ import { Pessoa } from '../pessoa';
 })
 export class PessoasComponent implements OnInit {
 
-  pessoa: Pessoa = {
-    id: 1,
-    nome: 'Adriana'
-  };
+  pessoas = PESSOAS;
 
   constructor() { }
 
