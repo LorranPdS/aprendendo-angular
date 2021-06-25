@@ -5,15 +5,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PessoasComponent } from './pessoas/pessoas.component';
+import { DetalhePessoaComponent } from './detalhe-pessoa/detalhe-pessoa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PessoasComponent
+    PessoasComponent,
+    DetalhePessoaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, // Esse foi gerado no início mas no exerc não tem
+    AppRoutingModule,
     FormsModule
   ],
   providers: [],
